@@ -1,0 +1,49 @@
+===================================================
+DATABASE CREATION DOCUMENTATION
+===================================================
+
+CREATE DATABASE sl_dojo;
+
+===================================================
+DOCKER SETUP COMMANDS
+===================================================
+
+To build the Docker image for MySQL, run the following command:
+
+    docker build -t mysql-dojo .
+
+Then, to run the MySQL container, execute:
+
+    docker run -d --name mysql -p 3306:3306 mysql-dojo
+
+===================================================
+API USAGE EXAMPLE
+===================================================
+
+# Example 1: Create a new person record without contacts
+curl --location 'http://localhost:3000/people' \
+--header 'Content-Type: application/json' \
+--data '{
+    "name": "Rapha",
+    "age": 50
+}'
+
+# Example 2: Create a new person record with contacts
+curl --location 'http://localhost:3000/people' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "name": "Rapha",
+    "age": 50,
+    "contacts": [
+        {
+            "type": "email",
+            "value": "mail@mail.com"
+        }
+    ]
+}'
+
+
+
+
+
+
