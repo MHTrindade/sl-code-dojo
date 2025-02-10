@@ -2,7 +2,7 @@
 
 ## Visão Geral
 
-Este projeto é uma API de exemplo desenvolvida em Golang utilizando o framework Fiber e o ORM GORM. A aplicação gerencia registros de pessoas e seus contatos, utilizando o MySQL como banco de dados. O projeto foi estruturado para ser executado em containers Docker, facilitando o desenvolvimento e a implantação.
+Este projeto é uma API de exemplo desenvolvida durante uma cerimônia de DOJO utilizando Golang, o framework Fiber e o ORM GORM. A aplicação gerencia registros de pessoas e seus contatos, utilizando o MySQL como banco de dados. O projeto foi estruturado para ser executado em containers Docker, facilitando o desenvolvimento e a implantação.
 
 ## Funcionalidades
 
